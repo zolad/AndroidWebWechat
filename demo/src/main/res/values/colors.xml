@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="color_transparent">#00000000</color>
+    <color name="color_lightgray">#777777</color>
+    <color name="color_black">#ff000000</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_steelblue">#63B8FF</color>
+    <color name="color_green">#00A11F</color>
+    <color name="color_gray">#808080</color>
+    <!-- 状态栏 -->
+    <color name="color_background">#99000000</color>
+    <color name="status_bar_time">#aeaeae</color>
+    <!-- 工具栏 -->
+    <color name="color_toobar">#FF6A6A6A</color>
+    <!-- 简洁设置 -->
+    <color name="ss_color_bg">#FF171717</color>
+    <color name="ss_color_normal">#ffbebebe</color>
+    <color name="ss_color_version">#ff9a9a9a</color>
+    <color name="ss_color_disable">#ff555555</color>
+    <!-- 简洁设置  seekbar颜色 -->
+    <color name="ss_color_seekbar">#ff31b31f</color>
+    <color name="ss_color_seekbar_bg">#ff454545</color>
+    <!-- 简洁设置  divider颜色 -->
+    <color name="ss_color_divider">#ff646464</color>
+    <color name="s_setting_main_background">#ff3e4044</color>
+    <color name="s_setting_sub_background">#ff1f1f1f</color>
+    <color name="s_setting_sub_focus">#373737</color>
+    <color name="s_color_setting_main_divider_line">#ff333439</color>
+    <color name="s_color_setting_wlan_divider_line">#505050</color>
+    <color name="setting_waln_info_dialog_divider_line">#7a7a7a</color>
+    <color name="setting_system_clean_text">#ff696969</color>
+    <color name="s_listitem_bg_normal">#ff242424</color>
+    <color name="s_listitem_bg_focus">#ff27a72d</color>
+    <color name="custome_progress_dialog_bg">#3e4044</color>
+    
+    <!-- 设置 字体 -->
+    <color name="setting_waln_gray_text">#ababab</color>
+    <color name="setting_waln_dialog_background">#3e4044</color>
+    <color name="setting_waln_dialog_divider_line">#505050</color>
+    <color name="setting_waln_dialog_password_background">#ced1d3</color>
+    <color name="setting_waln_dialog_password_font">#454647</color>
+    <color name="seting_waln_dialog_button_background">#63676f</color>
+    <color name="setting_waln_dialog_button_hl_background">#31b31f</color>
+    <color name="setting_waln_dialog_check_box_font">#7a7a7a</color>
+    <color name="setting_wlan_info_dialog_title">#d2d2d2</color>
+    <color name="setting_fm_text_background">#ff7b7b7b</color>
+    <color name="setting_leftcontent_text_normal">#ffdfdfdf</color>
+    <color name="setting_leftcontent_text_selected">#ffffffff</color>
+    <color name="setting_leftcontent_background">#ff3e4044</color>
+    
+    <color name="setting_save_button_background_press">#50535b</color>
+    <color name="setting_save_button_background_normal">#63676f</color>
+    
+    
+    <!-- 对话框按钮点击颜色 -->
+    <drawable name="dialog_btn_click_gray">#ff636770</drawable>
+    <drawable name="dialog_btn_click_green">#ff31b31f</drawable>
+    
+    <color name="dialog_btn_selector">#1f8511</color>
+</resources>

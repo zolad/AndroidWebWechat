@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp" >
+
+    <ImageView
+        android:id="@+id/im"
+      android:layout_width="90dp"
+    android:layout_height="90dp"
+        
+        android:padding="10dp"
+        />
+        
+    <TextView
+        android:id="@+id/tv"
+        android:layout_toRightOf="@+id/im"
+      android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    android:padding="10dp"
+    android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:textSize = "15sp"
+        android:text="TextView" />
+
+</RelativeLayout>
