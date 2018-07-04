@@ -238,8 +238,7 @@ public class PersistentCookieStore implements CookieStore {
         return true;
     }
     
-    //һ������
-    //����cookie��
+
     
     public String getWebwxDataTicketFromCookie(){
     	

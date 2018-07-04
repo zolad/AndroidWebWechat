@@ -2,7 +2,6 @@ package com.heimz.androidwebwechat;
 
 import android.app.Application;
 
-import com.heimz.androidwebwechatlib.api.WebWeChatService;
 import com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -20,7 +19,7 @@ public class MyApplication extends Application{
         // TODO Auto-generated method stub
         super.onCreate();
 
-        WebWeChatService.init(this);
+       // WebWeChatService.init(this);
 
         //init imageloader
         File cacheDir = StorageUtils.getOwnCacheDirectory(

@@ -3,6 +3,7 @@
 package com.heimz.androidwebwechatlib.api;
 
 import android.app.Application;
+import android.content.Context;
 import android.os.Environment;
 import android.text.TextUtils;
 
@@ -80,11 +81,13 @@ public class WebWeChatService {
 	public ClientData mClientData;
 	// public OkHurlStack mHurlStack;
 	public WeChatUrl mUrlInterface;
-	private static WebWeChatService instance;
+	private volatile static WebWeChatService instance;
 	public PersistentCookieStore mCookieStore;
 	//private List mlist;
 
-	public WebWeChatService() {
+	public WebWeChatService(Context context) {
+
+		init(context);
 
 		this.mClientData = new ClientData();
 		this.mUrlInterface = new WeChatUrl(this.mClientData);
@@ -103,13 +106,15 @@ public class WebWeChatService {
 		ApplicationContext.init(context);
 	}
 
+	public static void init(Context context) {
+		ApplicationContext.init(context.getApplicationContext());
+	}
 	
-	
-	public static WebWeChatService getInstance() {
+	public static WebWeChatService getInstance(Context context) {
 		if (instance == null) {
 			synchronized (WebWeChatService.class) {
 				if (instance == null) {
-					instance = new WebWeChatService();
+					instance = new WebWeChatService(context);
 				}
 			}
 		}

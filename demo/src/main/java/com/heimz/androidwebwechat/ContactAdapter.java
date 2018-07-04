@@ -106,7 +106,7 @@ public class ContactAdapter extends BaseAdapter {
       //  viewHolder.im.setImageResource(context.getResources().getColor(R.color.color_gray));
 
         viewHolder.tv.setText(data.get(position).NickName+"");
-        final String imagepath = "http://" + WebWeChatService.getInstance().mClientData.mHost + data.get(position).HeadImgUrl;
+        final String imagepath = "https://" + WebWeChatService.getInstance(context).mClientData.mHost + data.get(position).HeadImgUrl;
         viewHolder.im.setTag(imagepath);
         ImageRequest imageRequest = new ImageRequest(
                 imagepath,
@@ -124,7 +124,7 @@ public class ContactAdapter extends BaseAdapter {
             }
         });
 
-        WebWeChatService.getInstance().addRequest(imageRequest);
+        WebWeChatService.getInstance(context).addRequest(imageRequest);
         //ImageLoader.getInstance().loadImage(uri,
 
 

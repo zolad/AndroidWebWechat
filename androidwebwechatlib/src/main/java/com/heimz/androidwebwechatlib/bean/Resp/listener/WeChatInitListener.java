@@ -1,13 +1,12 @@
 package com.heimz.androidwebwechatlib.bean.Resp.listener;
 
-import org.json.JSONObject;
-
-
 import com.alibaba.fastjson.JSON;
 import com.android.volley.Response.Listener;
 import com.heimz.androidwebwechatlib.api.WebWeChatService;
 import com.heimz.androidwebwechatlib.bean.OnResponseResult;
 import com.heimz.androidwebwechatlib.bean.Resp.InitResp;
+
+import org.json.JSONObject;
 
 public class WeChatInitListener  implements Listener<JSONObject> {
 
@@ -41,23 +40,7 @@ public class WeChatInitListener  implements Listener<JSONObject> {
 			onResult.onSuccess(res);
 			return;
 			
-			
-			
-			//DebugTool.saveFile(arg0.toString());
-					
-					//GsonTool.getInstance().fromJson(arg0.toString(), WebWxInitResp.class);
-			
-			//MLog.d("wechat", GsonTool.getInstance().toJson(res).toString());
-			//Toast.makeText(ApplicationContext.getContext(), "init���ݽ���ʱ�䣺"+(System.currentTimeMillis()-st)/1000+"��",
-				//	Toast.LENGTH_LONG).show();
-//			if(res!=null&&res.BaseResponse.Ret == 0){
-//				webWeChatService.mClientData.mSyncKey = res.SyncKey;
-//				
-//				onResult.onSuccess(res);
-//				return;
-//			}else
-//				onResult.onFail(-1, "object null or fail");
-			
+
 			
 		}else{
 		

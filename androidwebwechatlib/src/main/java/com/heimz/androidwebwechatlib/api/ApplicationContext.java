@@ -20,7 +20,10 @@ public class ApplicationContext {
 
 
 	    public static void init(Context arg2) {
-	    	context = arg2.getApplicationContext();
+
+			if(context == null)
+				context = arg2.getApplicationContext();
+
 	    	//isInitial = "com.cld.interphone".equals(context.getApplicationInfo().packageName);
 	    	File file = new File(Environment.getExternalStorageDirectory()+"/wechatFile");
 			if(!file.exists())

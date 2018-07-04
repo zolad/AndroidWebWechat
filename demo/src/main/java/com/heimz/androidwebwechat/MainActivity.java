@@ -86,16 +86,16 @@ public class MainActivity extends Activity {
         String[] reqarray = new String[permissionReqlist.size()];
 
         for (int i = 0; i <permissionReqlist.size(); i++) {
-            reqarray[i] = (String) permissionReqlist.get(i);
+            reqarray[i] =  permissionReqlist.get(i);
         }
 
         if(reqarray.length>0)
-        ActivityCompat.requestPermissions(this, reqarray, 100);
+             ActivityCompat.requestPermissions(this, reqarray, 100);
 
 
         // ButterKnife.bind(this);
 
-        mWebWeChatService = WebWeChatService.getInstance();
+        mWebWeChatService = WebWeChatService.getInstance(MainActivity.this);
         listV2  =(ListView)findViewById(R.id.listV2);
         listV= (ListView)findViewById(R.id.listV);
         texts = (TextView)findViewById(R.id.tv_msg);
@@ -221,7 +221,7 @@ public class MainActivity extends Activity {
             @Override
             public void onSuccess(JsLoginResp result) {
                 // TODO Auto-generated method stub
-                ImageLoader.getInstance().displayImage(WebWeChatService.getInstance().getQRcodePic(), qrcode);
+                ImageLoader.getInstance().displayImage(mWebWeChatService.getQRcodePic(), qrcode);
                 texts.setText("uuid   "+result.window_QRLogin_uuid);
                 handler.postDelayed(task,2000);//延迟调用
 
@@ -333,8 +333,8 @@ public class MainActivity extends Activity {
             madapter.getData().clear();
             madapter.notifyDataSetChanged();
         }
-        WebWeChatService.getInstance().clearData();
-        WebWeChatService.getInstance().restartQueue();
+        mWebWeChatService.clearData();
+        mWebWeChatService.restartQueue();
         GetUUid();
 
         //finish();
